@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherForecast</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/330ed45258.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row heading-wrapper">
+        <span class="col-5 header">
+          <h1 id="city"></h1>
+          <p id="date"></p>
+        </span>
+        <span class="col-5 search-form">
+          <div class="col-2">
+            <button type="button" class="compassBtn" id="compassBtn">
+              <span class="button-icon">
+                <i class="fa-solid fa-compass compass"></i>
+              </span>
+            </button>
+          </div>
+          <form id="searchCityForm">
+            <div class="form-group">
+              <input
+                class="form-control search search-bar"
+                type="search"
+                placeholder="enter city..."
+                autocomplete="off"
+                autofocus="on"
+                id="city-input"
+              />
+              <button type="button" class="btn btn-outline-light search-button">
+                search
+              </button>
+            </div>
+          </form>
+        </span>
+      </div>
+      <div class="main-card">
+        <div class="row">
+          <div class="col-3 main2">
+            <img
+              class="current-weather-icon"
+              src="images/partly cloudy.jpg"
+              alt="Cloud and sun images"
+            />
+            <br />
+            <p class="weather-icon-description">
+              <span class="main-description" id="main-description">
+                Partly Cloudy
+              </span>
+              <br />
+              <small>18°C - 22°C</small>
+            </p>
+          </div>
+          <div class="col-3 second-col">
+            <h2 class="temp-container">
+              <span class="current-temp" id="current-temp"></span>
+              <span class="units">
+                <a href="#" id="celsius">°C</a> |
+                <a href="#" id="fahrenheit">°F</a>
+              </span>
+            </h2>
+          </div>
+          <div class="col-6 weather-details-container">
+            <ul class="weather-details">
+              <li><i class="fa-solid fa-cloud-rain"></i> Precipitation: 70%</li>
+              <li>
+                <i class="fa-solid fa-wind"></i> Wind:
+                <span id="wind"></span>km/h
+              </li>
+              <li>
+                <i class="fa-solid fa-droplet"></i> Humidity:
+                <span id="humidity"></span>%
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="days-forecast">
+          <div class="row">
+            <div class="col">
+              <p>
+                <strong>Monday</strong>
+                <br />
+                <img src="images/sunny.jpg" alt="sun image" />
+                <br />
+                <small> 18°C - 26°C </small>
+              </p>
+            </div>
+            <div class="col">
+              <p>
+                <strong>Tuesday</strong>
+                <br />
+                <img src="images/rainsun.jpg" alt="rainsun image" />
+                <br />
+                <small>18°C - 21°C</small>
+              </p>
+            </div>
+            <div class="col">
+              <p>
+                <strong>Wednesday</strong>
+                <br />
+                <img src="images/rain.jpg" alt="rain image" />
+                <br />
+                <small>12°C - 20°C</small>
+              </p>
+            </div>
+            <div class="col">
+              <p>
+                <strong>Thursday</strong>
+                <br />
+                <img src="images/cloudy.jpg" alt="cloud image" />
+                <br />
+                <small>17°C - 22°C</small>
+              </p>
+            </div>
+            <div class="col noborder">
+              <p>
+                <strong>Friday</strong>
+                <br />
+                <img src="images/partly cloudy.jpg" alt="cloud-Sun image" />
+                <br />
+                <small>18°C - 24°C</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Coded by Fatima Jillani
+      <footer>
+        <script src="src/index.js"></script>
+      </footer>
+    </footer>
+  </body>
+</html>
