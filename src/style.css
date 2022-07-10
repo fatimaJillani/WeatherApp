@@ -176,7 +176,8 @@ small {
 }
 
 footer {
-  font-size: small;
+  font-size: 12px;
+  font-weight: 400;
   font-family: "Courier New", Courier, monospace;
   position: relative;
   width: 750px;
@@ -185,5 +186,8 @@ footer {
 }
 a {
   text-decoration: none;
+}
+#celsius,
+#fahrenheit {
   color: white;
 }
