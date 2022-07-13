@@ -64,7 +64,9 @@ h1 {
   line-height: 25px;
   font-weight: 800;
   letter-spacing: 0.5px;
+  text-transform: capitalize;
 }
+
 .second-col {
   padding: 0;
 }
