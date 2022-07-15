@@ -9,6 +9,46 @@ h1 {
   padding-top: 7px;
   position: relative;
   left: -7px;
+  top: 15px;
+}
+img {
+  width: 40%;
+}
+hr {
+  position: relative;
+  top: 25px;
+  background-color: #466986;
+  font-weight: 600;
+  height: 1px;
+}
+
+small {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  font-size: 13px;
+}
+
+footer {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  width: 750px;
+  left: 70px;
+  top: -30px;
+}
+a {
+  text-decoration: none;
+}
+.days-forecast {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 50px;
+  background-color: #062037;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.784);
 }
 .container-fluid {
   padding: 30px;
@@ -26,7 +66,7 @@ h1 {
 .heading-wrapper {
   position: relative;
   top: 20px;
-  border-top: 1px solid #466986;
+  border-top: 1px solid rgb(68, 87, 104);
 }
 .header {
   position: relative;
@@ -36,7 +76,7 @@ h1 {
 #date {
   position: relative;
   left: 10px;
-  top: -10px;
+  top: 5px;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
 }
@@ -44,7 +84,7 @@ h1 {
   text-align: center;
 }
 .current-weather-icon {
-  width: 80px;
+  width: 65%;
   position: relative;
   left: 18px;
   top: 25px;
@@ -52,12 +92,12 @@ h1 {
 .weather-icon-description {
   position: relative;
   left: 15px;
-  top: 30px;
-  border: 0.5px solid white;
+  top: 20px;
+  border: 0.5px solid rgba(255, 255, 255, 0.729);
   padding: 7px 7px 5px 7px;
   border-radius: 0.375rem;
   font-size: 15px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0.1);
 }
 .main-description {
   font-size: 18px;
@@ -87,7 +127,7 @@ h1 {
   line-height: 75px;
   position: relative;
   left: 5px;
-  top: -10px;
+
   font-family: "Roboto", sans-serif;
 }
 
@@ -95,7 +135,7 @@ h1 {
   font-size: 18px;
   position: relative;
   left: -7px;
-  top: -45px;
+  top: -40px;
   letter-spacing: -3px;
 }
 .weather-details {
@@ -146,51 +186,11 @@ h1 {
 .compass {
   color: white;
 }
-
-img {
-  width: 35%;
-}
-.days-forecast {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  top: 50px;
-  background-color: #062037;
-  font-size: 17px;
-  color: rgba(255, 255, 255, 0.784);
-}
-hr {
-  position: relative;
-  top: 25px;
-  background-color: #466986;
-  font-weight: 600;
-  height: 1px;
-}
-
-small {
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0;
-  font-size: 13px;
-}
 .col {
-  border-right: 1px solid #466986;
+  border-right: 1px solid rgb(68, 87, 104);
 }
 .noborder {
   border: none;
-}
-
-footer {
-  font-size: 12px;
-  font-weight: 400;
-  font-family: "Courier New", Courier, monospace;
-  position: relative;
-  width: 750px;
-  left: 70px;
-  top: -30px;
-}
-a {
-  text-decoration: none;
 }
 #celsius,
 #fahrenheit {
