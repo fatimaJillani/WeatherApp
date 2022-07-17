@@ -56,12 +56,11 @@ a {
   background-color: #062037;
   color: white;
   line-height: 24px;
-
   height: 520px;
   width: 780px;
   box-shadow: 2px 2px 2px rgb(67, 67, 67);
   font-family: "Roboto", sans-serif;
-  border-radius: 0.375rem;
+  border-radius: 0.4rem;
   height: 535px;
 }
 .heading-wrapper {
