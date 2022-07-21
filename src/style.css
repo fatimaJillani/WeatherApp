@@ -14,13 +14,6 @@ h1 {
 img {
   width: 40%;
 }
-hr {
-  position: relative;
-  top: 25px;
-  background-color: #466986;
-  font-weight: 600;
-  height: 1px;
-}
 
 small {
   font-family: Arial, Helvetica, sans-serif;
@@ -186,11 +179,27 @@ a {
 .compass {
   color: white;
 }
-.col {
+.foscastColumb {
   border-right: 1px solid rgb(68, 87, 104);
+  border-left: 1px solid rgb(68, 87, 104);
+}
+.tophr {
+  position: relative;
+  top: 25px;
+  background-color: #466986;
+  font-weight: 600;
+  height: 1px;
+}
+.bottomHr {
+  position: relative;
+  top: 50px;
 }
 .noborder {
   border: none;
+}
+.weather-forecast {
+  position: relative;
+  top: 40px;
 }
 #celsius,
 #fahrenheit {
