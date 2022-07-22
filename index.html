@@ -26,73 +26,79 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row heading-wrapper">
-        <span class="col-5 header">
-          <h1 id="city"></h1>
-          <p id="date"></p>
-        </span>
-        <span class="col-5 search-form">
-          <div class="col-2">
+      <div class="weather-app">
+        <div class="row header">
+          <div class="col-1">
             <button type="button" class="compassBtn" id="compassBtn">
               <span class="button-icon">
                 <i class="fa-solid fa-compass compass"></i>
               </span>
             </button>
           </div>
-          <form id="searchCityForm">
-            <div class="form-group">
-              <input
-                class="form-control search search-bar"
-                type="search"
-                placeholder="enter city..."
-                autocomplete="off"
-                autofocus="on"
-                id="city-input"
-              />
-              <button type="button" class="btn btn-outline-light search-button">
-                search
-              </button>
+          <div class="col-11">
+            <form id="searchCityForm">
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    class="form-control search search-bar"
+                    placeholder="enter city..."
+                    autocomplete="off"
+                    autofocus="on"
+                    id="city-input"
+                  />
+                </div>
+                <div class="col-3">
+                  <button
+                    type="button"
+                    class="btn btn-outline-light search-button"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="weatherInfo">
+          <div class="row">
+            <div class="col-6 sec-1">
+              <h1 id="city"></h1>
+              <p id="date"></p>
+              <div class="weather-details-container">
+                <ul class="weather-details">
+                  <li>
+                    <i class="fa-solid fa-cloud-rain"></i> Precipitation: 70%
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-wind"></i> Wind:
+                    <span id="wind"></span>km/h
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-droplet"></i> Humidity:
+                    <span id="humidity"></span>%
+                  </li>
+                </ul>
+              </div>
             </div>
-          </form>
-        </span>
-      </div>
-      <div class="main-card">
-        <div class="row">
-          <div class="col-3 main2">
-            <img
-              class="current-weather-icon"
-              src="images/partly cloudy.jpg"
-              alt="Cloud and sun images"
-              id="current-weather-icon"
-            />
-            <br />
-            <p class="weather-icon-description">
-              <span class="main-description" id="main-description"> </span>
+
+            <div class="col-6">
+              <div class="temp-container">
+                <img src="" id="current-weather-icon" />
+                <strong class="current-temp" id="current-temp"></strong>
+                <span class="units">
+                  <a href="#" id="celsius" class="active">°C</a> |
+                  <a href="#" id="fahrenheit">°F</a>
+                </span>
+              </div>
               <br />
-              <small>18°C - 22°C</small>
-            </p>
-          </div>
-          <div class="col-3 second-col">
-            <h2 class="temp-container">
-              <span class="current-temp" id="current-temp"></span>
-              <span class="units">
-                <a href="#" id="celsius" class="active">°C</a> |
-                <a href="#" id="fahrenheit">°F</a>
-              </span>
-            </h2>
-          </div>
-          <div class="col-6 weather-details-container">
-            <ul class="weather-details">
-              <li><i class="fa-solid fa-cloud-rain"></i> Precipitation: 70%</li>
-              <li>
-                <i class="fa-solid fa-wind"></i> Wind:
-                <span id="wind"></span>km/h
-              </li>
-              <li>
-                <i class="fa-solid fa-droplet"></i> Humidity:
-                <span id="humidity"></span>%
-              </li>
-            </ul>
+              <p class="weather-icon-description">
+                <span class="main-description" id="main-description"> </span>
+                <br />
+                <small>18°C - 22°C</small>
+              </p>
+            </div>
           </div>
         </div>
         <hr class="tophr" />
