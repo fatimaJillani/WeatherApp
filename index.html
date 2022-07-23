@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
@@ -44,7 +44,6 @@
                     class="form-control search search-bar"
                     placeholder="enter city..."
                     autocomplete="off"
-                    autofocus="on"
                     id="city-input"
                   />
                 </div>
@@ -68,9 +67,8 @@
               <p id="date"></p>
               <div class="weather-details-container">
                 <ul class="weather-details">
-                  <li>
-                    <i class="fa-solid fa-cloud-rain"></i> Precipitation: 70%
-                  </li>
+                  <li></li>
+
                   <li>
                     <i class="fa-solid fa-wind"></i> Wind:
                     <span id="wind"></span>km/h
@@ -101,18 +99,16 @@
             </div>
           </div>
         </div>
-        <hr class="tophr" />
-        <div class="weather-forecast" id="forecast"></div>
-        <hr class="bottomHr" />
       </div>
-    </div>
-    <footer>
-      <a href="https://github.com/fatimaJillani/WeatherApp" target=" blank"
-        >Open-source code </a
-      >by Fatima Jillani
+      <div class="weather-forecast" id="forecast"></div>
       <footer>
-        <script src="src/index.js"></script>
+        This project was coded by Fatima Jillani and is
+        <a href="https://github.com/fatimaJillani/WeatherApp" target=" blank"
+          >open-sourced on GitHub
+        </a>
+        and hosted on Netlifyy
       </footer>
-    </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
