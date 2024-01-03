@@ -1,12 +1,13 @@
 # Weather App
 
 ## Overview
-This Weather App is a Java-based application that provides current weather data for any location, offering features like location-based weather retrieval, Fahrenheit, and Celsius temperature conversion.
+This Weather App is a Java-based application that provides current weather data for any location, offering features like location-based weather retrieval, Fahrenheit and Celsius temperature conversion, as well as a 5-day weather forecast.
 
 ## Features Implemented
 1. **Current Weather Data:** Retrieve real-time weather information for any specified location.
 2. **Location-Based Weather:** Utilize the app to fetch weather data based on the current location.
 3. **Temperature Conversion:** Switch between Fahrenheit and Celsius temperature units.
+4. **5-Day Weather Forecast:** Access a detailed forecast for the next 5 days.
 
 ## Technologies Used
 - JavaScript
@@ -44,4 +45,4 @@ This Weather App is a Java-based application that provides current weather data 
 
 
 ## License
-This project is not lisenced. Feel free to use, modify, and distribute as per the terms of the license.
+This project is not licensed. Feel free to use, modify, and distribute as per the terms of the license.
